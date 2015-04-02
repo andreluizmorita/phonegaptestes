@@ -1,0 +1,155 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+/*    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;*/
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    margin: 5px auto;
+    width:100%;                   /* text area width */
+    text-align:center;
+    
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+#acelerometrodiv { background: #292929; width: 300px; margin: 0 auto; height: 200px; border: 1px solid #fff; }
+.block { 
+    background: #3333FF; border-radius: 20px; border: 1px solid #ccc;
+    width: 25px; height: 22px; color: #fff; text-align: center; padding-top: 4px;
+
+    font-weight: bold; font-size: 14px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* COMPASS ---- */
+.compass { position: relative;  }
+.compassdiv { height: 100px; width: 100px; margin: 0 auto; border: 2px solid #ccc; }
+#needle{
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -20px;
+    -webkit-transform: rotate(90deg);
+}
+.blue{
+    height: 50px;
+    background-color: #00f;
+}
+.red{
+    height: 50px;
+    background-color: #f00;
+}
+.smallImage, .video { border: 2px solid #ccc; }
+/*.showbox {
+    float: left;
+    margin:0;
+    width: 100px;
+    height: 20px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+.showbox.slideright:hover {
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+    -o-transform: translate(3em,0);
+    -ms-transform: translate(3em,0);
+    transform: translate(3em,0);
+}*/
